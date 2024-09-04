@@ -1,8 +1,8 @@
 import { StrictMode } from 'react';
-import { render } from 'react-dom';
+import { hydrate } from 'react-dom';
 import { App } from './app';
 
-render(
+hydrate(
   <StrictMode>
     <App />
   </StrictMode>,

@@ -10,7 +10,7 @@ type Props = Readonly<{
 export const Layout = ({ children }: Props) => {
   return (
     <div className="home-page">
-      <LogoutBanner />
+      {/* <LogoutBanner /> */}
       <Page>
         <Row>
           <main className="col-md-9">

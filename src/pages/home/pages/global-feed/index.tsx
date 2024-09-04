@@ -28,7 +28,7 @@ const GlobalFeedPage = ({ pageSize = 10 }: Props) => {
 
   return (
     <>
-      {isAuth ? null : <Redirect from={ROUTES.globalFeed} to="/" />}
+      {/* {isAuth ? null : <Redirect from={ROUTES.globalFeed} to="/" />} */}
       <article.Feed
         articlesStore={model.$articles}
         isEmpty={isEmpty}
