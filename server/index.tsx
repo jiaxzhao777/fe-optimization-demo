@@ -1,4 +1,3 @@
-
 import express from 'express';
 import { DIST, PUBLIC_PATH } from '../webpack/constants';
 import { serverRenderer } from './renderer';

@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouterContext } from 'react-router';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
-import { history } from '../src/shared/router';
 import { App } from '../src/app/ui/app/app';
+import { history } from '../src/shared/router';
 import { DIST } from '../webpack/constants';
 
 function getIndexHTMLTemplate() {
@@ -20,6 +20,8 @@ export function serverRenderer(req, res) {
   history.push(reqUrl);
 
   const markup = renderToString(<App />);
+
+  // eslint-disable-next-line no-console
   console.log(`markup=${markup.substring(0, 100)}`);
 
   if (context.url) {
